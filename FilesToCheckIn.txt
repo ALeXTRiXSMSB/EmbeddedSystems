@@ -1,0 +1,33 @@
+FILES TO CHECK IN (http://software-dl.ti.com/ccs/esd/documents/sdto_ccs_source-control.html) (191231)
+
+Source control with CCS
+Files to check in
+
+One of the first questions that come up when working with source control and CCS is which CCS project files need to be checked in to source control.
+CCSv5 and greater
+
+The following project files should be checked into source control:
+
+    .ccsproject
+    .cproject
+    .project
+    .settings folder
+    makefile.defs (if using SYS/BIOS)
+
+.ccsproject has project information specific to CCS.
+.cproject and .project are Eclipse CDT project files.
+.settings folder is a standard Eclipse folder that has settings that apply for the project.
+makefiles.defs has additional make rules included by the generated project makefile for SYS/BIOS projects.
+
+For projects that use TI-RTOS or SysConfig, the RTSC configuration file (.cfg) or SysConfig configuration file (.syscfg) should be checked in along with other source files.
+
+The following files and folders should not be checked into source control:
+
+    \Debug or \Release \ folder
+    .xdchelp
+    .config folder
+    .launches folder
+
+Configuration folders like \Debug or \Release are generated folders that contain build artifacts like object files and do not need to be checked into source control. .xdchelp is a generated file that is used to help display error messages in the problems view and does not need to be checked into source control. .config and .launches are generated folders that do not need to be checked into source control.
+
+For target configuration files or targetConfigs folder: If the project is configured to "Manage the project's target-configuration automatically" and the default settings in the generated ccxml file are not changed, then it is optional to check it into source control (as it will get auto-regenerated if missing). But if the ccxml file is being managed manually, or modifications were made to the default settings in the auto-generated one, then it is advisable to check it into source control.

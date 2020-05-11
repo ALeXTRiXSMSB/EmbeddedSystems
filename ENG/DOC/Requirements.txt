@@ -1,0 +1,36 @@
+Manöver
+  Kreisbogen mit einstellbarem Umfang und Richtung
+  Fahren einer best. Strecke Geradeaus Vorwärts/Rückwärts
+  Track Suchen
+  Line Follower
+  Immer an der Wand entlang
+  
+Manöver Koordinator/Controller/Zustandsmaschine
+  
+  
+Monitoring
+  Gefahrener Pfad 
+  Ressourcen (Raum/Zeit)  
+  Bumpers
+  IR-Sensoren
+  ToF-Sensor
+  LIDAR-Sensor (1D, 2D)
+  Display
+  
+  
+Features OSIII  
+  Task Flag Group
+  Task Queues
+  Interrupts conform OSIII
+  
+  
+uc/Probe
+  Konfigurationen
+
+Test
+  LogicPort  
+  Parcours
+  
+Erweiterungen
+  BLE
+  WIFI  
